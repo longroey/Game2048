@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorback"
+    tools:context="com.ibm.longrory.game2048.Game">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scorestitle"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 "
+            android:textSize="30sp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <com.ibm.longrory.game2048.GridBlock
+        android:id="@+id/gridblock"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="10px"
+        android:layout_marginBottom="10px"
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:rowCount="4"></com.ibm.longrory.game2048.GridBlock>
+</LinearLayout>

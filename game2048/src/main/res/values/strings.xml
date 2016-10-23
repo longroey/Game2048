@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Game2048</string>
+    <string name="scorestitle">分数：</string>
+</resources>
